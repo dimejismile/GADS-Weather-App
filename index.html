@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Presley Weather App</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F203A" />
+  <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+  
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Lets Start with the Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./image/logo.png">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="#">Search</a></li>
+                <li><a href="#">Presley Events</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Project Documentation</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#"><img src="./image/search.png"></a></li>
+                <li><a href="#"><img src="./image/Hamburger Menu.svg"></a></li>
+            </ul>
+        </div>        
+    </div>
+
+    <!-- We done with Navbar, The main content display area -->
+    <div class="main-content">
+        <div class="content-box">
+            <div class="left-content">
+                <p>Real-time Weather Report</p>
+                <h1>Presly Weather App</h1>
+                <div class="line"></div>
+                <p class="text">Lunar Sphere is a real-time weather app. Founded by Sylvester Presly, the founder of “Smash It” and they hope to create an outdoor event in NYC in the coming months. Search for weather report of your location and know if any outdoor event is happening in your area.</p>
+                <div class="search-box">
+                    <input class="search-text" type="text" name="search" value="London" placeholder="Search for weather data location.">
+                    <a class="search-btn" id="submit">
+                        <i class="fas fa-search"></i>
+                    </a>    
+                </div>
+            </div>
+            <div class="right-content">
+                <img src="./image/bg.png">
+            </div>
+        </div>    
+    </div>
+    <!-- This is where the search result will be displayed -->
+    <div class="search-result">
+        <div class="title"></div>
+        <div class="temp-icon"></div>
+        <div class="temp-value"></div>
+        <div class="temp-description"></div>
+        <div class="weather-location"></div>
+    </div>   
+    
+    <script src="script.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/cf1b458543.js" crossorigin="anonymous"></script>
+</html>

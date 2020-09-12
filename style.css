@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5F2F5;
+    font-family: 'Product Sans';
+}
+
+.navbar {
+    display: flex;
+}
+.navbar .logo {
+    margin: 50px 0px 0px 50px;
+}
+.navbar .menu {
+    position: absolute;
+    right: 100px;
+    margin: 40px 0px 0px 50px;
+}
+.mobile-menu {
+    display: none;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+ul li {
+    padding-left: 20px;
+}
+ul li a {
+    text-decoration: none;
+    color: #8D8D8D;
+    text-align: center;
+}
+.active> a {
+    color: #0085B7;
+    font-weight: bold;
+    border-bottom: 2px solid #0085B7;
+}
+.main-content {
+
+}
+.content-box {
+    display: flex;
+}
+.content-box .left-content {
+    margin-top: 15%;
+    margin-left: 50px;
+    width: 50%;
+}
+.left-content p {
+    width: 80%;
+    font-size: 0.8rem;
+    color: #8D8D8D;
+}
+.left-content h1 {
+    color: #0085B7;
+    font-weight: bold;
+}
+.right-content {
+    margin-top: 15%;
+    margin-left: 100px;
+}
+.right-content img {
+    width: 70%;
+}
+
+.search-box {
+    position: absolute;
+    background: #0F203A;
+    margin-top: 2%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 40%;
+}
+.search-btn {
+    color: #0EE1EA;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0F203A;
+    cursor: pointer;
+}
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    color: #E5F2F5;
+    font-size: 1em;
+    transition: 0.4s;
+    line-height: 2px;
+    width: 90%;
+}
+
+/** mOBILE STYLING**/
+@media only screen and (max-width: 800px) {
+    .navbar .logo {
+        margin: 30px 0px 0px 30px;
+    }
+    .menu {
+        display: none;
+    }
+    .navbar .mobile-menu {
+        position: absolute;
+        right: 40px;
+        margin: 20px 0px 0px 30px;
+    }
+    .mobile-menu {
+        transition: 2s ease-in-out;
+        display: flex;
+    }
+    .mobile-menu ul {
+    flex-direction: row;
+    list-style-type: none;
+    }
+    .mobile-menu ul li {
+        padding-left: 20px;
+    }
+    .content-box .left-content {
+        margin: 50px;
+        margin-top: 30%;
+        width: 100%;
+    }
+    .search-box {
+        position: absolute;
+        background: #0F203A;
+        margin-top: 2%;
+        height: 40px;
+        border-radius: 15px;
+        padding: 10px;
+        width: 70%;
+    }
+    .search-text {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 10px;
+        color: #E5F2F5;
+        font-size: 1em;
+        transition: 0.4s;
+        line-height: 2px;
+        width: 80%;
+    }
+    .right-content {
+        margin-top: 15%;
+        margin-left: 100px;
+    }
+    .right-content img {
+        display: none;
+    }
+}    
+
